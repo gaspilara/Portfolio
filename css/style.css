@@ -1,0 +1,762 @@
+
+@font-face{
+    src: url(fonts/Geometria.ttf);
+    font-family: geometria;
+}
+@font-face{
+    src: url(fonts/Geometria-Light.ttf);
+    font-family: geometria-l;
+}
+@font-face{
+    src: url(fonts/Geometria-Medium.ttf);
+    font-family: geometria-m;
+}
+@font-face{
+    src: url(fonts/Geometria-ExtraBold.ttf);
+    font-family: geometria-x;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: #111;
+}
+button {
+    border: none;
+    background: none;
+    outline: none;
+    font-family: geometria;
+    color: white;
+}
+input {
+    outline: none;
+}
+nav {
+    width: 100%;
+    height: 9%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+ .navBox {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /*border: 1px solid white;*/
+ }
+    .btnSection {
+        width: 60%;
+        height: 60%;
+        display: flex;
+        justify-content: space-between;
+        /*border: 1px solid white;*/
+    }
+        .btn1Box, .btn2Box, .btn3Box{
+            width: 30%;
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /*border: 1px solid white;*/
+        }
+            .btnSection button {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+            .flagNavBox {
+                width: 100%;
+                font-size: 6px;
+                color: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url('../img/DSC_0973 comprimida roja.jpg');
+    background-position-x: 15%;
+    background-size: cover;
+}
+    .trazoHeader {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        position: absolute;
+        z-index: 0;
+        opacity: 70%;
+    }
+    .headerTitleSection {
+        width: 100%;
+        height: 52%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+        .logoSection, .nameSection, .lineDetailSection {
+            width: 85%;
+        }
+        .logoSection {
+            height: 40%;
+        }
+            .logoSection img {
+                width: 15%;
+            }
+        .nameSection {
+            height: 35%;
+            display: flex;
+            align-items: center;
+        }
+            .nameSection h1 {
+                font-family: geometria-x;
+                color: white;
+                font-size: 3em;
+            }
+        .lineDetailSection {
+            height: 25%;
+        }
+            .lineDetailSection hr {
+                position: absolute;
+                border: none;
+                background-color: #b3ff00;
+                width: 25px;
+                height: 10px;
+            }
+    .introSection {
+        background-color: #111;
+        width: 100%;
+        height: 20%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+        .introBox {
+            width: 85%;
+            height: 75%;
+            display: flex;
+            align-items: center;
+        }
+            .infoSection {
+                width: 70%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+                .introTitle {
+                    font-family: geometria;
+                    margin: 0;
+                }
+                .introDescrip {
+                    font-family: geometria-m;
+                    margin: 0;
+                }
+            .myStoryBtnSection {
+                width: 30%;
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+            }
+                .myStoryBtnSection button {
+                    font-family: geometria-m;
+                    color: #b3ff00;
+                }
+.aboutSection {
+    width: 100%;
+    height: auto;
+    background-color: #b3ff00;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+    .aboutTextBox {
+        width: 85%;
+        font-family: geometria-x;
+        font-size: 1.6em;
+        color: #111;
+        letter-spacing: -1px;
+        line-height: 100%;
+        text-transform: uppercase;
+        margin-bottom: -.5em;
+    }
+    .moreAboutTextBox {
+        font-family: geometria-m;
+        text-transform: none;
+    }
+    .aboutSection button {
+        color: #111;
+        font-size: 1.5em;
+    }
+
+/* WORKS ================================================================================= */
+
+.worksSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    background: #111;
+}
+    .titleWorksBox {
+        width: 85%;
+        font-family: geometria-x;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .viewmy-titleWorks, .works-titleWorks {
+        margin: 0;
+        letter-spacing: -1px;
+        line-height: 65%;
+    }
+    .viewmy-titleWorks {
+        font-size: 3.65em;
+        color: #b3ff00;
+    }
+    .works-titleWorks {
+        font-size: 4.27em;
+        color: #fff;
+    }
+    .galeryWorksSection {
+        width: 100vw;
+        height: 100vw;
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+        .galeryWorksSection div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .galeryWorksSection div img, .galeryWorksSection div video{
+                width: 100%;
+                height: 100%;
+            }
+    .carouselSection { /* <<<<<<< Ajax */
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        position: fixed;
+        background: rgba(0, 0, 0, 50%);
+        z-index: 49;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: geometria-x;
+    }
+        .carouselSection button {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 50%;
+        }
+        .imgCarouselBox {
+            width: 100vw;
+            height: 100vw;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .carouselSection img, .carouselSection video {
+            width: 100%;
+            height: 100%;
+          /*  transition: transform .2s;*/
+        }              
+          /*  .carouselSection img:hover {
+                transform: scale(1.1);
+            }*/
+
+        .loadingBox {
+            border-radius: 50%;
+            border: 8px solid transparent;
+            border-top: 8px solid #b3ff00;
+            width: 30px;
+            height: 30px;
+            animation: .3s rotate linear infinite;
+        }
+
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }to{
+                transform: rotate(360deg);
+            }
+        }
+
+/* TECHNOLOGIES =================================================================== */
+
+.technoArticle {
+    width: 100vw;
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: #121212;
+    grid-area: sectionMain;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+    .technologiesSection {
+        width: 100vw;
+        background: #121212;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .technologiesTitleBox {
+            width: 85%;
+            margin-top: 20%;
+        }
+            .technologiesTitleBox h2 {
+                color: white;
+                font-family: geometria-m;
+                font-size: 1.5em;
+            }
+        .greenBox {
+            width: 100%;
+            height: 20vh;
+        }
+            .greens {
+                width: 100%;
+                height: 20vh;
+                position: absolute;
+                z-index: 1;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+                .gBox {
+                    width: 70px;
+                    height: 70px;
+                    text-align: center;
+                }
+                    .gBox label {
+                        font-family: geometria-m;
+                        font-size: 0.7em;
+                        color: white;
+                    }
+                    .green1 {
+                        width: 70px;
+                        height: 70px;
+                        background: #b3ff00;
+                        color: #121212;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 2em;
+                    }
+            .bgDividido {
+                position: absolute;
+                width: 100%;
+                height: 20vh;
+                display: flex;
+                flex-direction: column;
+            }
+                .bgDividido div {
+                    width: 100%;
+                    height: 100%;
+                }
+                .bgA {
+                    background: #121212;
+                }
+                .bgB {
+                    background: #1f1f1f;
+                }
+        .moreTBox {
+            width: 100%;
+            background: #1f1f1f;
+            color: white;
+            font-family: geometria-m;
+            text-align: right;
+        }
+            .moreTBox p {
+                font-size: 0.8em;
+                margin-top: 3em;
+                margin-right: 2em;
+            }
+                .greenData {
+                    color: #b3ff00;
+                }
+    .designSection {
+        width: 100vw;
+        background: #1f1f1f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .designTitleBox {
+            width: 85%;
+            margin-top: 3em;
+            font-family: geometria-m;
+        }
+        .designTitleBox h2 {
+            color: white;
+            margin-bottom: 0.2em;
+            font-size: 1.5em;
+        }
+        .designTitleBox label {
+            color: #b3ff00;
+            font-family: geometria-l;
+        }
+    .designGreenCBox {
+        width: 100%;
+        height: 20vh;
+    }
+        .circles {
+            width: 100%;
+            height: 20vh;
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+            .cBox {
+                width: 70px;
+                height: 70px;
+                text-align: center;
+            }
+                .cBox label {
+                    font-family: geometria-m;
+                    font-size: 0.7em;
+                    color: white;
+                }
+                .circle1 {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 5em;
+                    background: #b3ff00;
+                    color: #121212;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 2em;
+                }
+                    .imgPs, .imgIl {
+                        width: 35%;
+                        height: 35%;
+                    }
+                    .imgAe {
+                        width: 45%;
+                        height: 45%;
+                    }
+        .bgCirclesDividido {
+            position: absolute;
+            width: 100%;
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+        }
+            .bgCirclesDividido div {
+                width: 100%;
+                height: 100%;
+            }
+            .bgA {
+                background: #121212;
+            }
+            .bgB {
+                background: #1f1f1f;
+            }
+    .moreCBox {
+        width: 100%;
+        background: #121212;
+        color: white;
+        font-family: geometria-m;
+        display: flex;
+        justify-content: center;
+    }
+        .morePBox {
+            width: 85%;
+        }
+            .morePBox p {
+                font-size: 0.8em;
+                margin-top: 3em;
+                margin-right: 2em;
+            }
+                .greenDataC {
+                    color: #b3ff00;
+                    margin-right: 1em;
+                }
+  
+@media only screen and (min-width: 600px) {
+    .technologiesTitleBox {
+        width: 60%;
+        margin-top: 0;
+    }
+    .greenBox {
+        display: flex;
+        justify-content: center;
+    }
+    .greens {
+       width: 60%;   
+    }
+    .moreTBox {
+        text-align: center;
+    }
+    .moreTBox p {
+        margin-right: -20em;
+    }
+    .designTitleBox {
+         width: 60%;
+    }
+    .designGreenCBox {
+        display: flex;
+        justify-content: center;
+    }
+    .circles {
+        width: 60%;
+    }
+    .morePBox {
+        width: 60%;
+    }
+}
+  
+/* CONTACT =================================================================*/
+
+.sectionContact {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: #121212;
+    padding-top: 3em;
+    z-index: 1;
+  }
+    .letsTalkArticle {
+        width: 85%;
+        font-family: geometria-m;
+        color: white;
+    }
+        .letsTalkArticle h5 {
+            font-size: 1.5em;
+        }
+    .contactForm {
+        width: 85%;
+        font-family: geometria-m;
+        color: white;
+        padding-top: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+        .textAreaWithBtn {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+        }
+            .btnFormBox {
+                display: flex;
+                justify-content: flex-end;
+            }
+                .textAreaWithBtn button {
+                    background: none;
+                    border: none;
+                    color: white;
+                    font-size: 1em;
+                    outline: none;
+                    color: #b3ff00;
+                }
+                .btnClip {
+                    opacity: 40%;
+                }
+                .btnSubmit {
+                    color: #b3ff00;
+                }
+
+        .inpName, .inpEmail, .textAreaClient {
+            width: 100%;
+            height: 10vh;
+            background: none;
+            font-family: geometria-m;
+            color: white;
+            font-size: 0.8em;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #b3ff00;
+        }
+        .textAreaClient {
+            border: none;
+        }
+  
+@media only screen and (min-width: 600px) {
+    .sectionContact {
+        padding-top: 5em;
+    }
+    .letsTalkArticle {
+        width: 60%;
+    }
+    .letsTalkArticle h5 {
+        font-size: 2em;
+    }
+    .letsTalkArticle a {
+        float: none;
+        font-size: 1em;
+    }
+    .contactForm {
+       width: 60%;
+    }
+    .contactForm h5 {
+        font-size: 2em;
+    }
+    .btnClip {
+        font-size: 1.5em;
+    }
+    .btnSubmit {
+        font-size: 1.5em;
+    }
+    .inpName, .inpEmail, .textAreaClient {
+        font-size: 1em;
+    }
+}
+
+/* FOOTER =======================================================================*/
+
+footer {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    background: #121212;
+    z-index: 1;
+    padding-bottom: 5vh;
+}
+    footer .logoBox {
+        height: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        font-family: geometria-m;
+        color: #fff;
+        font-size: .7em;
+    }
+        footer .logoBox img {
+            width: 35%;
+            margin-top: -10em;
+        }
+
+.thanks, .thanks button {
+    position: absolute;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 70%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+    .thanks button {
+        width: 100%;
+        height: 100%;
+        background: none;
+    }
+    .thanksBox {
+        width: 85%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+        color: #b3ff00;
+        font-family: geometria-x;
+        text-align: center;
+    }
+    .thanksBox h1{
+        color: #fff;
+    }
+        
+@media only screen and (min-width: 600px) {
+    footer {
+        height: 40vh;
+    }
+    footer .logoBox {
+        justify-content: space-between;
+    }
+        footer .logoBox img {
+            margin-bottom: 1em;
+        }
+}
+  
+
+
+
+
+
+
+
+
+    @media only screen and (min-height: 800px) {
+        .btn1Box, .btn2Box, .btn3Box{
+            height: 65%;
+        }
+        .btnSection {
+            width: 60%;
+            height: 60%;
+        }
+        .nameSection h1 {
+            font-size: 4em;
+        }
+        .logoSection img {
+            width: 20%;
+        }
+        .lineDetailSection hr {
+            width: 30px;
+            height: 12px;
+        }
+        .aboutTextBox {
+            font-size: 2em;
+        }
+        .viewmy-titleWorks {
+            font-size: 4em;
+            color: #b3ff00;
+        }
+        .works-titleWorks {
+            font-size: 5em;
+            color: #fff;
+        }
+    }
+
+
+
+    .js-show-content {
+        display: none;
+    }
+
+    .js-setColor {
+        color: #b3ff00;
+    }
