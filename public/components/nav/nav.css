@@ -1,0 +1,55 @@
+nav {
+    width: 100%;
+    height: 9%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    background: linear-gradient(to bottom, rgba(0,0,0,60%), transparent)
+}
+ .navBox {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+ }
+    .btnSection {
+        width: 60%;
+        height: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+        .btn1Box, .btn2Box, .btn3Box{
+            width: 30%;
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+            .btnSection button {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+            .flagNavBox {
+                width: 100%;
+                font-size: 6px;
+                color: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+@media only screen and (min-height: 800px) {
+  .btn1Box, .btn2Box, .btn3Box{
+      height: 65%;
+  }
+  .btnSection {
+      width: 60%;
+      height: 60%;
+  }
+}

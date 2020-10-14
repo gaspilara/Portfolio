@@ -1,0 +1,16 @@
+@font-face{
+    src: url(fonts/Geometria.ttf);
+    font-family: geometria;
+}
+@font-face{
+    src: url(fonts/Geometria-Light.ttf);
+    font-family: geometria-l;
+}
+@font-face{
+    src: url(fonts/Geometria-Medium.ttf);
+    font-family: geometria-m;
+}
+@font-face{
+    src: url(fonts/Geometria-ExtraBold.ttf);
+    font-family: geometria-x;
+}

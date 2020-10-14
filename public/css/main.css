@@ -1,0 +1,10 @@
+@import '_vars.css';
+@import '_general.css';
+@import '../components/nav/nav.css';
+@import '../components/header/header.css';
+@import '../components/about/about.css';
+@import '../components/works/works.css';
+@import '../components/technologies/technologies.css';
+@import '../components/contact/contact.css';
+@import '../components/footer/footer.css';
+@import '_js-styles.css';

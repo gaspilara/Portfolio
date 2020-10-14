@@ -1,0 +1,24 @@
+.js-show-content {
+    display: none;
+}
+
+.js-setColor {
+    color: #b3ff00;
+}
+
+.js-setColor-white {
+    color: #fff;
+}
+
+.js-setBgColor {
+    background: #111;
+}
+
+.js-setColor-fill {
+    fill: #b3ff00;
+}
+
+.js-setBorder {
+    opacity: 30%;
+    background: red;
+}

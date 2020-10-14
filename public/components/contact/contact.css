@@ -1,0 +1,102 @@
+.sectionContact {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: #121212;
+    padding-top: 3em;
+    z-index: 48;
+  }
+    .thanks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .letsTalkArticle {
+        width: 85%;
+        font-family: geometria-m;
+        color: white;
+    }
+        .letsTalkArticle h5 {
+            font-size: 1.5em;
+        }
+    .contactForm {
+        width: 85%;
+        font-family: geometria-m;
+        color: white;
+        padding-top: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+        .textAreaWithBtn {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+        }
+            .btnFormBox {
+                display: flex;
+                justify-content: flex-end;
+            }
+                .textAreaWithBtn button {
+                    background: none;
+                    border: none;
+                    color: white;
+                    font-size: 1em;
+                    outline: none;
+                    color: #b3ff00;
+                }
+                .btnClip {
+                    opacity: 40%;
+                }
+                .btnSubmit {
+                    color: #b3ff00;
+                }
+
+        .inpName, .inpEmail, .textAreaClient {
+            width: 100%;
+            height: 10vh;
+            background: none;
+            font-family: geometria-m;
+            color: white;
+            font-size: 0.8em;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #b3ff00;
+        }
+        .textAreaClient {
+            border: none;
+        }
+  
+@media only screen and (min-width: 600px) {
+    .sectionContact {
+        padding-top: 5em;
+    }
+    .letsTalkArticle {
+        width: 60%;
+    }
+    .letsTalkArticle h5 {
+        font-size: 2em;
+    }
+    .letsTalkArticle a {
+        float: none;
+        font-size: 1em;
+    }
+    .contactForm {
+       width: 60%;
+    }
+    .contactForm h5 {
+        font-size: 2em;
+    }
+    .btnClip {
+        font-size: 1.5em;
+    }
+    .btnSubmit {
+        font-size: 1.5em;
+    }
+    .inpName, .inpEmail, .textAreaClient {
+        font-size: 1em;
+    }
+}
